@@ -1,8 +1,8 @@
 import fresh_tomatoes
 import media
-import api
+import api # import api.py to use functions in file
 
-
+"""Initialize six instance variables and pass five args to each variable"""
 troy = media.Movie(api.get_title("Troy"),
                    api.get_poster("Troy"),
                    "https://www.youtube.com/watch?v=znTLzRJimeY",
@@ -39,7 +39,7 @@ ip_man = media.Movie(api.get_title("Ip Man"),
                      "https://www.youtube.com/watch?v=1AJxXQ7xojE",
                      api.get_release_date("Ip Man"),
                      api.get_rating("Ip Man"))
-
+"""Create movie list variable to store all instance variables"""
 movie = [troy,
          batman_vs_superman,
          step_brothers,
@@ -47,4 +47,5 @@ movie = [troy,
          elf,
          ip_man]
 
+"""call function and provided it one arg, the movies list"""
 fresh_tomatoes.open_movies_page(movie)

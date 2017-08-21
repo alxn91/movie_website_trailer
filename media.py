@@ -1,8 +1,8 @@
 import webbrowser
 
-
+"""Creat a class with named Movie"""
 class Movie():
-
+    """initalize variables when class called"""
     def __init__(self,
                  movie_title,
                  poster_image,
@@ -14,9 +14,7 @@ class Movie():
         self.trailer_youtube_url = trailer_youtube
         self.release_date = release_date
         self.rating = rating
-
+    """function to open movie trailer"""
     def show_trailer(self):
         webbrowser.open(self.trailer_youtube_url)
-
-
 
