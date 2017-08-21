@@ -7,7 +7,7 @@ Udacity Full Stack Web Develper Nanodegree Program project#1, Movie Trailer Webs
 1. Download zip file and unzip files to your computer or clone github repository to your desired location
 2. Open terminal window(Mac and Linux) or command prompt in Windows 
 3. Navigate to project directory by using ``cd`` command
-4, Run the following command:            
+4. Run the following command:            
     ```bash
     python entertainment_center.py
     ```
