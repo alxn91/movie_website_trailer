@@ -49,3 +49,10 @@ def get_poster(query):
         if title['title'] == query:
             return "https://image.tmdb.org/t/p/w500/" + title['poster_path']
 
+
+def get_rating(query):
+    data = get_info(query)
+
+    for title in data['results']:
+        if title['title'] == query:
+            return title['vote_average']

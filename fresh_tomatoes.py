@@ -128,7 +128,8 @@ movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
-    <p>Release date: {movie_release_date}</p>
+    <h4>Rating: {rating}</h4>
+    <h4>Release date: {movie_release_date}</h4>
 </div>
 '''
 
@@ -147,7 +148,8 @@ def create_movie_tiles_content(movies):
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id,
-            movie_release_date=movie.release_date
+            movie_release_date=movie.release_date,
+            rating = movie.rating
         )
     return content
 
