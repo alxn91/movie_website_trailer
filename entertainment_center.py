@@ -1,6 +1,6 @@
 import fresh_tomatoes
 import media
-import api # import api.py to use functions in file
+import api  # import api.py to use functions in file
 
 """Initialize six instance variables and pass five args to each variable"""
 troy = media.Movie(api.get_title("Troy"),

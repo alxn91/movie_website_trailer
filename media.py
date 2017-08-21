@@ -14,7 +14,8 @@ class Movie():
         self.trailer_youtube_url = trailer_youtube
         self.release_date = release_date
         self.rating = rating
-    """function to open movie trailer"""
+    
     def show_trailer(self):
+        """function to open movie trailer"""
         webbrowser.open(self.trailer_youtube_url)
 
